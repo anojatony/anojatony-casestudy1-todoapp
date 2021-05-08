@@ -7,15 +7,15 @@ function ajax(){
     
         if(this.readyState==4 && this.status==200){
            var response=JSON.parse(this.responseText);
-           let list=[];   // empty array  
+           var list=[];   // empty array  
            for(var i=0;i<response.length;i++){ 
                let obj=response[i];
 
             // Creating row and its elements 
-               let row=document.createElement('tr');
-               let id=document.createElement('td');
-               let title=document.createElement('td');
-               let output=document.createElement('td');
+               var row=document.createElement('tr');
+               var id=document.createElement('td');
+               var title=document.createElement('td');
+               var output=document.createElement('td');
             // let completed=document.createElement('td');
                output.innerHTML=`<td> <input type="checkbox" class="checkzz"></td>`; 
                id.innerHTML=obj.id;
