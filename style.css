@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* login form starts */
+
+.form-container{
+    background: #fff;
+    padding: 30px;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+}
+.center h5{
+    margin-top: 85px;
+    text-align: center;
+    color: seagreen;
+    font-weight: 600;
+}
+#error{
+    margin-top: 15px;
+    margin-left: 39%;
+    color: sienna;
+    background-color: #FFE5B4;
+    font-weight: 500;
+    text-align: center;
+}
+/* #pwderror{
+    margin-top: 5px;
+    color: sienna;
+    background-color: #FFE5B4;
+    font-weight: 500;
+} */
+
+/* login form ends */
+#head{
+    text-align: center;
+    margin-top: 45px;
+    color: seagreen;
+    border-bottom: 3px solid  #013567;
+    width: 35%;
+    margin-left: 32%;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+/* todo starts */
+
+/* todo ends */
+/* todo table starts */
+#table{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    border: 1px solid gray;
+}
+#table td{
+    border: 1px solid gray;
+}
+
+/* todo table ends */
+
+/* navbar */
+.navbar{
+    background-color: #013567;
+}
+#log{
+    color: white;
+    margin-top: 8px;
+    margin-left: 8px;
+    text-decoration: none;
+}
+/* .navbar-brand img{
+    height:100px;
+} */
+/* navbar ends */
+
+/* footer starts */
+.footer{
+    background-color: #013567;
+    color: white;
+    bottom:0px;
+    height: 10%;
+}
+.copyright{
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+}
+/* footer ends */
