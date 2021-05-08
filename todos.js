@@ -50,8 +50,9 @@ function ajax(){
         checkbox.addEventListener('change', function() {
         check = 
         Array.from(checkboxes)   //   checkboxes to an array
-        .filter(i => i.checked)  //   filtered to remove unchecked checkboxes
-        .map(i => i.value)       //   using map to extract only checked values from the array 
+        .filter(function(i){     
+           return i.checked;    //   filtered to remove unchecked checkboxes
+        })  
         if(check.length==95){
         resolve(alert("Congrats. 5 Tasks have been Successfully Completed"));
             }
