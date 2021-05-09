@@ -4,17 +4,17 @@ let error=document.getElementById("error");
 let pwderror=document.getElementById("pwderror");
 let checkbox=document.getElementById("checkbox");
 
-    function validate(username,password){
+    function validate(){
         // username  // password
-        if((username.value.trim() =="") || (pwd.value.trim() =="")){
+        if((user.value.trim() =="") || (pwd.value.trim() =="")){
          alert("Please enter your login details");
          return false;
         }
-        else if(username.value != "admin"){
+        else if(user.value != "admin"){
             error.innerHTML="Invalid username! Please try again";
             return false;
         }
-        else if(password.value != 12345){
+        else if(pwd.value != 12345){
             error.innerHTML="Invalid password! Please try again";
             return false;
         }
@@ -28,7 +28,10 @@ let checkbox=document.getElementById("checkbox");
             return true;
         }
     }
-      
+      function redirect(callback){
+          return callback();
+
+      }
      function confirm(){
-         return validate(user,pwd);
+         return redirect(validate);
      }
